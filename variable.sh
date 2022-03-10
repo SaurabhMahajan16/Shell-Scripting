@@ -13,7 +13,8 @@ Date=2022-03-10
 echo today date is $Date
 # but this will print same date everyday
 # in order to get dynamic date
-DATE=$(date +%f)
+# date +%F will give date in the format of yyyy-mm-dd
+DATE=$(date +%F)
 echo this is today date but it is dynamic as er current date $DATE
 
 #using variables of arithmetic expressions
