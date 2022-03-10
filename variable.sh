@@ -15,10 +15,25 @@ echo today date is $Date
 # in order to get dynamic date
 # date +%F will give date in the format of yyyy-mm-dd
 DATE=$(date +%F)
-echo this is today date but it is dynamic as er current date $DATE
+echo this is today date but it is dynamic as per current date $DATE
 
-#using variables of arithmetic expressions
+#using variables of arithmetic expressions we have to use double curly parenthesis $(())
 x=5
 y=6
 sum=$((x+y))
 echo sum of x and y is $sum
+
+#everything in shell scripting there are no data types everything is a string
+#as a user u should know the data type
+b=1000
+readonly b
+b=10
+echo $b
+# readonly is like constant in programming language once declared as constant value cannot be change but in order
+#to invert it u have to remove readonly command
+#scalar everything in array is scalar which means array in linux space is separator in an array
+x=(10 20 small 'This is array')
+echo first element of array ${x[0]}
+echo fourth value of array ${x[3]}
+echo all values of array ${x[*]}
+echo count of elements of array ${#x[*]}
