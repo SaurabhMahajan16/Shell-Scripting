@@ -37,3 +37,13 @@ echo first element of array ${x[0]}
 echo fourth value of array ${x[3]}
 echo all values of array ${x[*]}
 echo count of elements of array ${#x[*]}
+c=100
+echo ${c[0]}
+# in order to give a value in array which contains spaces use '' and put that element in the ''
+#local variable if i assign one var to another var and give the vale to assigned var in prompt it wont
+#because of the variables in script are local variables but to over come that we can use export var=value
+#eg. export localvar=10 this will export value inside the script if localvar is used inside the script
+
+echo localVariable=${variableInScript}
+
+
