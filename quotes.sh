@@ -5,5 +5,5 @@
 
 
 read -p 'how much money u have =$' name
-echo "you have $name $"
+echo "you have $name$"
 
