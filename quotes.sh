@@ -4,6 +4,6 @@
 # to disable the special char we go for quotes, single quotes disable every special char
 
 
-read -p 'how much money u have =$' name
+read -p 'how much money u have =' name '$'
 echo "you have $name$"
 
