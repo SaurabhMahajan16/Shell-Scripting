@@ -46,7 +46,8 @@ echo ${c[0]}
 
 echo localVariable=${variableInScript}
 
-#when we declare in prompt it becomes environment variable
+#when we declare in prompt it becomes environment variables
+#end of var
 
 
 
